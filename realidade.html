@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realidade Virtual</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+
+    <a-scene>
+
+        <!-- Adicione elementos de realidade virtual temáticos -->
+        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" clickable></a-box>
+
+        <!-- Ícone de astronauta-->
+        <a-entity gltf-model="link_modelo_astrounata.gltf" position="0 1.25 -5" scale="0.2 0.2 0.2"></a-entity>
+
+        <!-- Ícone de planeta-->
+        <a-sphere position="1 1 -3" radius="1" color="#EF2D5E"></a-sphere>
+
+        <!-- Ícone de nave espacial-->
+        <a-entity gltf-model="link_modelo_nave.gltf" position="-2 1 -6" scale="0.1 0.1 0.1"></a-entity>
+    </a-scene>
+
+    <script>
+        // Adicione interatividade com Javascript
+        document.querySelector('[Clickable]').addEventListener('Click', function () {
+            //Adcione código de manipulação de clique aqui
+            alert('Elemento clicado!');
+        })
+    </script>
+    
+</body>
+</html>
